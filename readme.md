@@ -21,9 +21,15 @@ npm install
 ```
 
 *4.*
+*4.a*
 Run the bower installer from the root of the project:
 ```bash
 npm install -g bower # run this if you dont have bower installed
+```
+
+*4.b*
+For each theme:
+```bash
 bower install
 ```
 

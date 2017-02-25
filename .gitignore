@@ -3,11 +3,8 @@
 /node_modules
 .env
 storage/debugbar/
-app/Modules
 config/cms.*.php
 themes/
-public/themes/*/
-public/modules/*/
 database/migrations/
 !resources/lang/en/
 resources/lang/*
