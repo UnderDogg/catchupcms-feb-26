@@ -1,15 +1,5 @@
 # CatchUp CMS
 
-## Requirements
-* Laravel 5.3
-* PHP 5.6+
-* MySQL 5+
-* Apache Rewrite Module *`Enabled`*
-* Mcrypt PHP Extension
-* OpenSSL PHP Extension
-* Mbstring PHP Extension
-* Tokenizer PHP Extension
-
 ## Installation
 
 *1.*
