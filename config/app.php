@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => 'CatchUp CMS',
 
     /*
     |--------------------------------------------------------------------------
@@ -166,11 +166,11 @@ return [
         /*
          * Application Service Providers...
          */
-        Cms\Providers\AppServiceProvider::class,
-        // Cms\Providers\AuthServiceProvider::class,
-        // Cms\Providers\BroadcastServiceProvider::class,
-        Cms\Providers\EventServiceProvider::class,
-        // Cms\Providers\RouteServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        // App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        // App\Providers\RouteServiceProvider::class,
 
         /*
          * CMS Package Service Providers

@@ -1,10 +1,10 @@
 <?php
 
-namespace Cms\Exceptions;
+namespace App\Exceptions;
 
-use Cms\Modules\Pages\Http\Controllers\Frontend\PagesController;
-use Cms\Modules\Core\Exceptions\NotInstalledException;
-use Cms\Modules\Pages\Models\Page;
+use App\Modules\Pages\Http\Controllers\Frontend\PagesController;
+use App\Modules\Core\Exceptions\NotInstalledException;
+use App\Modules\Pages\Models\Page;
 use Exception;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
@@ -53,11 +53,11 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
-        if ($e instanceof \Cms\Modules\Core\Exceptions\NotInstalledException) {
+        if ($e instanceof \App\Modules\Core\Exceptions\NotInstalledException) {
             return $this->renderNotInstalled($e);
         }
 
-        if ($e instanceof \Cms\Modules\Core\Exceptions\InMaintenanceException) {
+        if ($e instanceof \App\Modules\Core\Exceptions\InMaintenanceException) {
             return $this->renderInMaintenance($e);
         }
 

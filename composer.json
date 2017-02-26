@@ -74,8 +74,8 @@
       "database"
     ],
     "psr-4": {
-      "Cms\\": "app/",
-      "Cms\\Modules\\": "app/Modules"
+      "App\\": "app/",
+      "App\\Modules\\": "app/Modules"
     },
     "files": [
       "app/Helpers/Debug.php"

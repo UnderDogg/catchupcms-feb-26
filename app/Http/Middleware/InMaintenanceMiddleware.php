@@ -1,4 +1,4 @@
-<?php namespace Cms\Http\Middleware;
+<?php namespace App\Http\Middleware;
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Auth;
@@ -28,7 +28,7 @@ class InMaintenanceMiddleware
                 if (!in_array($request->url(), [route('pxcms.user.login'), route('pxcms.user.logout')])) {
 
                     // if none of those things apply, throw the exception
-                    throw new \Cms\Modules\Core\Exceptions\InMaintenanceException('This site is in maintenance.');
+                    throw new \App\Modules\Core\Exceptions\InMaintenanceException('This site is in maintenance.');
                 }
 
             }
